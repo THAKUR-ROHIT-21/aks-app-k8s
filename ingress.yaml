@@ -3,7 +3,7 @@ kind: Ingress
 
 metadata:
   name: aks-app-ingress
-  namespace: aks-app
+  namespace: aks-aap
 
 spec:
   ingressClassName: nginx

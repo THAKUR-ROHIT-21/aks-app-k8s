@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: aks-backend
-  namespace: aks-app
+  namespace: aks-aap
 spec:
   replicas: 2
 
