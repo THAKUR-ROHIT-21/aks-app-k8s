@@ -1,16 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: aks-backend
+  name: postgres
   namespace: aks-app
 spec:
   type: ClusterIP
 
   selector:
-    app: aks-backend
+    app: postgres
 
   ports:
-    - name: http
-      port: 8000
-      targetPort: 8000
+    - port: 5432
+      targetPort: 5432
       protocol: TCP
